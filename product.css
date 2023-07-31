@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    height: 100px;
+    align-items: center;
+}
+.logo{
+    flex: 1;
+    padding: 5px 10px;
+    font-size: 20px !important;
+}
+.menu{
+    flex: 3;
+    display: flex;
+    padding: 10px 100px;
+    align-content: center !important;
+}
+.menu li{
+    padding: 5px 10px;
+    position: relative;
+}
+.menu li:hover .rounded{
+    display: block;
+    top: 30px;
+    background-color: #000;
+    color: white;
+}
+.rounded{
+    position: absolute;
+    width: 100px;
+    border: 1px solid grey;
+    padding: 10px 0 10px 10px;
+    display:none;
+    top: 50px;
+}
+.rounded li a {
+    font-size: 15px !important;
+    font-weight: normal;
+    color: white;
+    
+}
+.menu li a{
+    font-size: 20px;
+    font-weight: bold;
+}
+.orther{
+    flex: 1;
+    display: flex;
+    padding: 10px 10px
+}
+.orther li{
+    padding: 5px 10px;
+}
+.orther li:first-child{
+    position:relative;
+}
+.orther li:first-child input{
+    width: 100%;
+    border: none ;
+    border-bottom: 1px solid;
+}
+.orther li:first-child i{
+    position: absolute;
+    right: 10px;
+}
+
+.container{
+    padding: 60px;
+}
+/* .product{
+    /* padding: 100px 0; */
+    /* top: -50px; 
+
+}  */
+.product-top{
+    margin-bottom: 30px;
+}
+.product-top p{
+    font-family: var(--main-text-font);
+    margin: 0 12px;
+    font-size: 15px;
+    display: inline;
+
+}
+.product-content{
+    display: flex
+}
+.product-content-left{
+    width: 50%;
+}
+.product-content-big-img{
+    width: 100%;
+    padding-right: 20px ;
+
+}
+.product-content-big-img img{
+    width:100%;
+    cursor: pointer;
+
+}
+.product-content-small-img{
+    width: 100%;
+    display: flex;
+
+
+}
+.product-content-small-img img{
+    width: 115px;
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    margin-top: 15px;
+    cursor: pointer;
+    
+}
+.product-content-right{
+    width: 50%;
+    padding-left: 20px;
+    font-family: var(--main-text-font);
+    font-size: 20px;
+}
+.product-content-right-name{
+    font-family: var(--main-text-font);
+    font-size: 20px;
+}
+.product-content-right-name hr{
+    width: 20%;
+    align-content: right;
+}
+.size span{
+    display: inline-block;
+    padding: 3px 6px;
+    border: 1px solid #ddd;
+    margin: 10px 7px 10px 0;
+    font-size:15px ;
+    cursor: pointer;
+}
+.quantity{
+    display: flex;
+    margin-bottom: 20px;
+}
+.quantity input{
+    width: 40px;
+    height: 30px;
+    margin-left: 10px;
+    padding-left: 12px;
+    border: 1px solid #ddd;
+}
+.product-content-right-button button{
+    display: inline-block;
+    justify-content:space-between ;
+    align-content: center;
+    align-items: center;
+    background-color: #000;
+    color:white;
+    border:10%;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    transition: all 0.5s ease;
+}
+.product-content-right-button button:hover{
+    background-color: white;
+    color: #000;
+}
+.product-content-right-bottom{
+    padding-top: 40px;
+    border-top: 1px solid #ddd;
+    position: relative;
+    top: 12px;
+}
+.product-content-right-bottom-top{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    top: -10px;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%);
+}
+
+.app-container{
+    text-align: center;
+    align-items: center;
+    padding: 150px 0 50px 0;
+}
+.app-container p{
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+}
+.app-container input{
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    width: 300px;
+    text-align: center;
+    outline: none;
+}
+#iconapp{
+
+    margin: 10px;
+    font-size: 200%;
+}
+.app-google{
+    padding: 10px;
+}
+.footer-bottom{
+    text-align: center;
+}
+.footer-top{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,203 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container-head{
+    position: sticky;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 120px;
+    width: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    height: 100px;
+    align-items: center;
+}
+
+.logo{
+    flex: 1;
+    padding: 5px 10px;
+    font-size: 200px !important;
+}
+.menu{
+    flex: 3;
+    display: flex;
+    padding: 10px 100px;
+    align-content: center !important;
+}
+.menu li{
+    padding: 5px 10px;
+    position: relative;
+}
+.menu li:hover .rounded{
+    display: block;
+    top: 30px;
+    background-color: #000;
+    color: white;
+}
+.rounded{
+    position: absolute;
+    width: 100px;
+    border: 1px solid grey;
+    padding: 10px 0 10px 10px;
+    display:none;
+    top: 50px;
+}
+.rounded li a {
+    font-size: 15px !important;
+    font-weight: normal;
+    color: white;
+    
+}
+.menu li a{
+    font-size: 20px;
+    font-weight: bold;
+}
+.orther{
+    flex: 1;
+    display: flex;
+    padding: 10px 10px
+}
+.orther li{
+    padding: 5px 10px;
+}
+.orther li:first-child{
+    position:relative;
+}
+.orther li:first-child input{
+    width: 100%;
+    border: none ;
+    border-bottom: 1px solid;
+}
+.orther li:first-child i{
+    position: absolute;
+    right: 10px;
+}
+
+/* Main */
+
+.container {
+    width: 50%;
+    margin: 30px auto;
+    padding: 16px;
+    background-color: white;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    background-color: #212026;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+
+a {
+    color: dodgerblue;
+}
+
+
+.loginbtn{
+    background-color: #212026;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+/* Báo lỗi */
+.err {
+    font-weight: bold;
+    color: red
+}
+
+/* footer */
+.container-footer{
+    background-color: #f1f1f1;
+}
+.app-container{
+    text-align: center;
+    align-items: center;
+    padding: 150px 0 50px 0;
+}
+.app-container p{
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+}
+.app-container input{
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    width: 300px;
+    text-align: center;
+    outline: none;
+}
+#iconapp{
+    color: #000 !important;
+    margin: 10px;
+    font-size: 200%;
+}
+.app-google{
+    padding: 10px;
+}
+.footer-bottom{
+    text-align: center;
+}
+.footer-top{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}

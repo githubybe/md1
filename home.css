@@ -1,0 +1,183 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* head */
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    height: 100px;
+    align-items: center;
+}
+.container-head{
+    position: sticky;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 120px;
+    width: 100%;
+}
+.logo{
+    flex: 1;
+    padding: 5px 10px;
+    font-size: 200px !important;
+
+}
+.menu{
+    flex: 3;
+    display: flex;
+    padding: 10px 100px;
+    align-content: center !important;
+}
+.menu li{
+    padding: 5px 10px;
+    position: relative;
+}
+.menu li:hover .rounded{
+    display: block;
+    top: 30px;
+    background-color: #000;
+    color: white;
+}
+.rounded{
+    position: absolute;
+    width: 100px;
+    border: 1px solid grey;
+    padding: 10px 0 10px 10px;
+    display:none;
+    top: 50px;
+}
+.rounded li a {
+    font-size: 15px !important;
+    font-weight: normal;
+    color: white;
+    
+}
+.menu li a{
+    font-size: 20px;
+    font-weight: bold;
+}
+.orther{
+    flex: 1;
+    display: flex;
+    padding: 10px 10px
+}
+.orther li{
+    padding: 5px 10px;
+}
+.orther li:first-child{
+    position:relative;
+}
+.orther li:first-child input{
+    width: 100%;
+    border: none ;
+    border-bottom: 1px solid;
+}
+.orther li:first-child i{
+    position: absolute;
+    right: 10px;
+}
+/* Main */
+
+#slider{
+    padding-bottom:30px ;
+    border-bottom:2px solid #000 ;
+
+}
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+    transition: 0.3s;
+  }
+  
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.dot-container{
+    position:relative;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.dot{
+    height: 15px;
+    width: 15px;
+    background-color: #CCC;
+    border-radius: 50%;
+    margin-right:10px ;
+    cursor: pointer;
+}
+.dot.active{
+    background-color: #333;
+}
+.sellection-title {
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    margin: 0 0 0px 0;
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+/* footer */
+.container-footer{
+    background-color: #f1f1f1;
+}
+.app-container{
+    text-align: center;
+    align-items: center;
+    padding: 150px 0 50px 0;
+}
+.app-container p{
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+}
+.app-container input{
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    width: 300px;
+    text-align: center;
+    outline: none;
+}
+#iconapp{
+
+    margin: 10px;
+    font-size: 200%;
+}
+.app-google{
+    padding: 10px;
+}
+.footer-bottom{
+    text-align: center;
+}
+.footer-top{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
